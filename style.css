@@ -1,0 +1,39 @@
+:root {
+  --max-grid-size: calc((100% - calc (4vw / 5)));
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  border-style: none none solid none;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+#logo {
+  max-width: max(1vw, calc(100% - 95vw));
+}
+
+main {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  display: grid;
+  border-style: solid;
+  border-radius: 16px;
+  align-items: center;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
