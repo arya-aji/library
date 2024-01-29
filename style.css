@@ -4,26 +4,35 @@
 
 body {
   display: flex;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
   border-style: none none solid none;
   align-items: center;
-  margin-bottom: 2vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  background-color: rgb(238, 237, 235);
 }
 
 #logo {
-  max-width: max(1vw, calc(100% - 95vw));
+  max-width: 3vw;
+  display: block;
+  vertical-align: middle;
 }
 
 main {
   display: grid;
   gap: 1vw;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 10px;
 }
 
 .card {
@@ -33,7 +42,17 @@ main {
   align-items: center;
 }
 
-footer {
-  position: sticky;
-  bottom: 0;
+ul {
+  list-style-type: none;
 }
+
+footer {
+  background-color: rgb(238, 237, 235);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
