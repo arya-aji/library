@@ -44,6 +44,10 @@ main {
 
 ul {
   list-style-type: none;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1px;
+  padding: 1px;
 }
 
 footer {
@@ -55,4 +59,3 @@ footer {
   text-align: center;
   font-size: 1.2em;
 }
-
